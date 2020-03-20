@@ -10,16 +10,15 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("Puzzle Game");
+        primaryStage.setScene(new Scene(root, 523, 400));
         primaryStage.show();
     }
 
-
     public static void main(String[] args) {
-
+/*
         BinaryTreeNode tree = new BinaryTreeNode(5);
         System.out.println("Building tree with root value ");
         tree.insert(tree, 2);
@@ -31,7 +30,7 @@ public class Main extends Application {
         tree.insert(tree, 9);
         System.out.println("Traversing tree in order");
         tree.traversePreOrder(tree);
-
-        //launch(args);
+*/
+        launch(args);
     }
 }
